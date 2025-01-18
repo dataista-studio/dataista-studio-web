@@ -467,8 +467,8 @@
 @media (max-width: 767px) {
     
     .hero_warp .banner_content .banner_title {
-        font-size: 100px;
-        line-height: 85px;
+        font-size: 80px;
+        line-height: 80px;
     } 
     .hero_warp .banner_content .banner_title br {
         display: none;
