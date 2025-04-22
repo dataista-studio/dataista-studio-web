@@ -87,6 +87,31 @@ h4 {
     top: 6px;
 }
 
+.contact-span-second {
+    position: relative;
+    left: 220px;
+}
+
+.contact-span-second::before {
+    content:"";
+    background: black;
+    height: 48px;
+    position: absolute;
+    width: 220px;
+    left: -220px;
+    top: 6px;
+}
+
+.banner_contact {
+    text-align: center;
+    font-weight: 300;
+}
+
+.banner_contact a {
+    text-align: center;
+    text-decoration: underline;
+}
+
 .pop {
     font-family: "Inter", sans-serif;
 }
