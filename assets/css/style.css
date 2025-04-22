@@ -158,16 +158,16 @@ body {
     letter-spacing: 0;
     color: #677294;
     overflow-x: hidden;
-    background: #000;
+    background: #DBD500;
 }
 
 body.menu_open {
     overflow: hidden;
 }
 
-section {
+/* section {
     background: #fff;
-}
+} */
 
 .btn,
 .btn:focus,
@@ -786,7 +786,7 @@ header.header.headerFixed {
     height: 100%;
 }
 
-.hero_warp:before {
+/* .hero_warp:before {
     position: absolute;
     content: "";
     width: 100%;
@@ -794,7 +794,7 @@ header.header.headerFixed {
     background: rgba(0, 0, 0, 1);
     top: 0;
     left: 0;
-}
+} */
 
 .hero_warp.blog_single_banner:before {
     background: rgba(0, 0, 0, 0.8);
@@ -823,6 +823,35 @@ header.header.headerFixed {
     margin-bottom: 10px;
 }
 
+/* .studio {
+    position: relative;
+    left: 100px;
+}
+
+.studio::before {
+    content:"";
+    background: white;
+    height: 60px;
+    position: absolute;
+    width: 100px;
+    left: -100px;
+} */
+
+/* .banner-title-span {
+    display: block;
+    font-family: ;
+} */
+
+.dataista-logo {
+    width: 50%;
+}
+
+@media (width < 768px) {
+    .dataista-logo {
+        width: 100%;
+    }
+}
+
 .hero_warp .banner_content .exp_list {
     margin: 0;
     padding: 0 0 0 7px;
@@ -833,7 +862,7 @@ header.header.headerFixed {
     display: inline-block;
     position: relative;
     z-index: 1;
-    color: #f6f7fb;
+    color: black;
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 2px;
@@ -853,7 +882,7 @@ header.header.headerFixed {
     transform: translateY(-50%);
     width: 100%;
     height: 100%;
-    color: #d7d4cf;
+    color: black;
     font-size: 14px;
     z-index: -1;
 }
@@ -871,7 +900,7 @@ header.header.headerFixed {
 
 .hero_warp .social_link li a {
     display: block;
-    color: #fff;
+    color: black;
     font-size: 18px;
     width: 20px;
     height: 18px;
