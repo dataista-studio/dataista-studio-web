@@ -16,7 +16,7 @@ This file contains the styling for the actual tempalte, this is the file you nee
 
 /*Base font*/
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900);
 .primary-color {
     color: #ffffff;
 }
@@ -39,16 +39,92 @@ p {
     margin: 0;
 }
 
+h2 {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 62px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 21px;
+    font-family: "Source Serif 4", serif;
+    margin-bottom: 12px;
+}
+
+.h-span {
+    display: block;
+    line-height: 62px;
+}
+
+.h-span-second {
+    position: relative;
+    left: 110px;
+}
+
+.h-span-second::before {
+    content:"";
+    background: black;
+    height: 48px;
+    position: absolute;
+    width: 110px;
+    left: -110px;
+    top: 6px;
+}
+
+.somos-span-second {
+    position: relative;
+    left: 260px;
+}
+
+.somos-span-second::before {
+    content:"";
+    background: black;
+    height: 48px;
+    position: absolute;
+    width: 260px;
+    left: -260px;
+    top: 6px;
+}
+
+.contact-span-second {
+    position: relative;
+    left: 220px;
+}
+
+.contact-span-second::before {
+    content:"";
+    background: black;
+    height: 48px;
+    position: absolute;
+    width: 220px;
+    left: -220px;
+    top: 6px;
+}
+
+.banner_contact {
+    text-align: center;
+    font-weight: 300;
+}
+
+.banner_contact a {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact-wrap {
+    height: 60vh;
+}
+
 .pop {
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: normal;
-    color: #555;
 }
 
 a {
@@ -82,62 +158,6 @@ a.link:hover {
     color: rgba(23, 24, 25, 0.6) !important;
 }
 
-@font-face {
-    font-family: 'futura_bdcn_btbold';
-    src: url("../fonts/futura/futura_bold_font.woff2") format("woff2"), url("../fonts/futura/futura_bold_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futurabook';
-    src: url("../fonts/futura/futura_book_font.woff2") format("woff2"), url("../fonts/futura/futura_book_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_xblk_btextra_black';
-    src: url("../fonts/futura/futura_extra_black_font.woff2") format("woff2"), url("../fonts/futura/futura_extra_black_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futuraheavy';
-    src: url("../fonts/futura/futura_heavy_font.woff2") format("woff2"), url("../fonts/futura/futura_heavy_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futuralight';
-    src: url("../fonts/futura/futura_light_bt.woff2") format("woff2"), url("../fonts/futura/futura_light_bt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_ltcn_btlight';
-    src: url("../fonts/futura/futura_light_font.woff2") format("woff2"), url("../fonts/futura/futura_light_font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futuramedium';
-    src: url("../fonts/futura/futura_medium_bt.woff2") format("woff2"), url("../fonts/futura/futura_medium_bt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'futura_xblk_btextra_black';
-    src: url("../fonts/futura/futura_xblk_bt.woff2") format("woff2"), url("../fonts/futura/futura_xblk_bt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -154,11 +174,11 @@ a:hover {
 }
 
 body {
-    font: 400 16px/28px 'Poppins', sans-serif;
+    font-family: "Inter", sans-serif;
     letter-spacing: 0;
-    color: #677294;
+    color: black !important;
     overflow-x: hidden;
-    background: #000;
+    background: #DBD500;
 }
 
 body.menu_open {
@@ -166,7 +186,11 @@ body.menu_open {
 }
 
 section {
-    background: #fff;
+    background: #DBD500;
+}
+
+.section-title {
+    margin-bottom: 48px;
 }
 
 .btn,
@@ -302,7 +326,7 @@ header.header .navbar .select_lang a {
     color: #f6f7fb;
     font-size: 18px;
     font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     opacity: 0.4;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -322,7 +346,7 @@ header.header .navbar .hamburger {
     color: #f6f7fb;
     font-size: 18px;
     font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     letter-spacing: 4px;
     display: flex;
     align-items: center;
@@ -438,7 +462,7 @@ header.header .opnen_menu .header_main_menu .menu_item li a {
     font-size: 40px;
     line-height: 54px;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     transition: all 0.5s;
 }
 
@@ -519,7 +543,7 @@ header.header .sub_footer .footer_contact li {
 header.header .sub_footer .footer_contact li a {
     display: inline-block;
     color: #bbbbbb;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
@@ -704,7 +728,7 @@ header.header.headerFixed {
 
 .about_wrap .about_content h4 {
     color: #171819;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 35px;
     line-height: 65px;
     font-weight: 500;
@@ -748,13 +772,13 @@ header.header.headerFixed {
     height: 100vh;
     width: 100%;
     /* background: #000 url(../images/dataista-wide.png) no-repeat fixed center left; */
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;
 }
 
-.hero_warp.hide {
+/* .hero_warp.hide {
     display: none;
-}
+} */
 
 .hero_warp .video_bg {
     position: absolute;
@@ -786,7 +810,7 @@ header.header.headerFixed {
     height: 100%;
 }
 
-.hero_warp:before {
+/* .hero_warp:before {
     position: absolute;
     content: "";
     width: 100%;
@@ -794,7 +818,7 @@ header.header.headerFixed {
     background: rgba(0, 0, 0, 1);
     top: 0;
     left: 0;
-}
+} */
 
 .hero_warp.blog_single_banner:before {
     background: rgba(0, 0, 0, 0.8);
@@ -823,6 +847,42 @@ header.header.headerFixed {
     margin-bottom: 10px;
 }
 
+/* .studio {
+    position: relative;
+    left: 100px;
+}
+
+.studio::before {
+    content:"";
+    background: white;
+    height: 60px;
+    position: absolute;
+    width: 100px;
+    left: -100px;
+} */
+
+/* .banner-title-span {
+    display: block;
+    font-family: ;
+} */
+
+.dataista-logo {
+    width: 50%;
+}
+
+.img-profile {
+    border-radius: 50%;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+@media (width < 768px) {
+    .dataista-logo {
+        width: 100%;
+    }
+}
+
 .hero_warp .banner_content .exp_list {
     margin: 0;
     padding: 0 0 0 7px;
@@ -833,7 +893,7 @@ header.header.headerFixed {
     display: inline-block;
     position: relative;
     z-index: 1;
-    color: #f6f7fb;
+    color: black;
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 2px;
@@ -853,7 +913,7 @@ header.header.headerFixed {
     transform: translateY(-50%);
     width: 100%;
     height: 100%;
-    color: #d7d4cf;
+    color: black;
     font-size: 14px;
     z-index: -1;
 }
@@ -871,7 +931,7 @@ header.header.headerFixed {
 
 .hero_warp .social_link li a {
     display: block;
-    color: #fff;
+    color: black;
     font-size: 18px;
     width: 20px;
     height: 18px;
@@ -912,7 +972,7 @@ header.header.headerFixed {
     position: relative;
     overflow: hidden;
     font-weight: 300;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 11px;
     letter-spacing: 2px;
 }
@@ -977,7 +1037,7 @@ header.header.headerFixed {
     color: #fff;
     font-size: 13px;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     position: relative;
     font-weight: 300;
 }
@@ -1099,6 +1159,11 @@ header.header.headerFixed {
     z-index: 10;
 }
 
+.profile-wrap {
+    text-align: center;
+    padding: 0 40px;
+}
+
 .portfolio_item .port_img a {
     position: relative;
     display: inline-block;
@@ -1141,7 +1206,7 @@ header.header.headerFixed {
 .portfolio_item .port_text .catagory {
     text-transform: uppercase;
     font-size: 12px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 40px;
     letter-spacing: 2px;
     color: #fff;
@@ -1385,7 +1450,7 @@ header.header.headerFixed {
 .project_summary_list li {
     display: block;
     color: #888888;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 20px;
 }
@@ -1428,7 +1493,7 @@ header.header.headerFixed {
 
 .project_summary_list li b {
     color: #171819;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     margin-right: 5px;
 }
@@ -1436,7 +1501,7 @@ header.header.headerFixed {
 .single_body .portfolio_para {
     color: #171819;
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 50px;
@@ -1461,7 +1526,6 @@ header.header.headerFixed {
 /* start capabiliti_wrap  */
 
 .capabiliti_wrap {
-    background: #171819;
     position: relative;
     padding-bottom: 95px;
     padding-top: 173px;
@@ -1476,7 +1540,6 @@ header.header.headerFixed {
 }
 
 .capabiliti_wrap .capabiliti_title {
-    color: #999999;
     font-size: 90px;
     font-weight: normal;
     font-family: "futuraheavy";
@@ -1526,8 +1589,7 @@ header.header.headerFixed {
 }
 
 .capabiliti_wrap .capabiliti_tab_content .tab-pane .tabPara {
-    color: #848892;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
@@ -1545,16 +1607,16 @@ header.header.headerFixed {
 
 .capabiliti_wrap .capabiliti_tab_content .tab-pane .service_item .icon i {
     font-size: 40px;
-    color: #595959;
+    color: black;
     line-height: 28px;
 }
 
 .capabiliti_wrap .capabiliti_tab_content .tab-pane .service_item .content a h4 {
-    color: #c1c1c1;
+    color: black;
     font-size: 18px;
     font-weight: 700;
     line-height: 40px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     transition: all 0.5s;
 }
 
@@ -1563,10 +1625,10 @@ header.header.headerFixed {
 }
 
 .capabiliti_wrap .capabiliti_tab_content .tab-pane .service_item .content p {
-    color: #c1c1c1;
+    color: black;
     font-weight: 300;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 28px;
 }
 
@@ -1671,7 +1733,7 @@ header.header.headerFixed {
 
 .testimonial_wrap .test_details_content .test_details_slider_item .slider_title {
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 30px;
     line-height: 44px;
@@ -1682,7 +1744,7 @@ header.header.headerFixed {
     color: #c1c1c1;
     font-size: 16px;
     line-height: 30px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -1691,7 +1753,7 @@ header.header.headerFixed {
     color: #fff;
     font-size: 16px;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
 }
 
@@ -1699,7 +1761,7 @@ header.header.headerFixed {
     color: #c1c1c1;
     font-size: 13px;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
 }
 
@@ -1779,14 +1841,14 @@ header.header.headerFixed {
     line-height: 50px;
     font-weight: 600;
     letter-spacing: 1px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     text-transform: uppercase;
     text-align: center;
 }
 
 .somethings_interesting_wrap .interesting_item .interesting_content p {
     color: #171819;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
@@ -1866,7 +1928,7 @@ header.header.headerFixed {
     color: #333333;
     font-weight: 300;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 30px;
     border: 1px solid #c1c1c1;
     box-shadow: none;
@@ -1905,7 +1967,7 @@ header.header.headerFixed {
     color: #fff;
     font-weight: 400;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 30px;
     color: #fff;
     background-color: transparent;
@@ -2057,7 +2119,7 @@ header.header.headerFixed {
     color: #171819;
     font-size: 13px;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     position: relative;
     font-weight: 300;
 }
@@ -2096,7 +2158,7 @@ header.header.headerFixed {
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-bottom: 20px;
 }
 
@@ -2106,7 +2168,7 @@ header.header.headerFixed {
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
@@ -2153,7 +2215,7 @@ header.header.headerFixed {
     color: #333333;
     font-size: 16px;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     transition: all 0.5s;
     border: 1px solid transparent;
 }
@@ -2231,7 +2293,7 @@ header.header.headerFixed {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .widget ul li a:hover {
@@ -2267,7 +2329,7 @@ header.header.headerFixed {
     font-size: 14px;
     line-height: 22px;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .widget .media .media-body .tn_tittle a:hover {
@@ -2278,7 +2340,7 @@ header.header.headerFixed {
 .widget .media .media-body .recent_post_meta li a {
     color: rgba(23, 24, 25, 0.5);
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 12px;
 }
 .widget .media .media-body .recent_post_meta li a:hover {
@@ -2332,7 +2394,7 @@ header.header.headerFixed {
     color: #171819;
     font-size: 14px;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 27px;
 }
 
@@ -2406,7 +2468,7 @@ header.header.headerFixed {
     font-size: 16px;
     line-height: 30px;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-bottom: 25px;
 }
 
@@ -2528,7 +2590,7 @@ header.header.headerFixed {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .blog_single_content .author_about .media .media-body .author_info {
@@ -2536,7 +2598,7 @@ header.header.headerFixed {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-bottom: 17px;
 }
 
@@ -2545,7 +2607,7 @@ header.header.headerFixed {
     font-size: 15px;
     font-weight: 300;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-bottom: 15px;
 }
 
@@ -2561,7 +2623,7 @@ header.header.headerFixed {
 .blog_single_content .post_ago {
     color: #999;
     font-size: 12px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 9px;
     font-weight: 400;
     padding-left: 10px;
@@ -2618,7 +2680,7 @@ header.header.headerFixed {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-bottom: 10px;
 }
 
@@ -2627,7 +2689,7 @@ header.header.headerFixed {
     font-size: 15px;
     font-weight: 300;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-bottom: 15px;
 }
 
@@ -2636,7 +2698,7 @@ header.header.headerFixed {
     font-size: 12px;
     font-weight: 600;
     line-height: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     position: relative;
     text-transform: uppercase;
 }
@@ -2750,7 +2812,7 @@ header.header.headerFixed {
 .footer .footer_contact li a {
     display: inline-block;
     color: #bbbbbb;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
@@ -2836,7 +2898,7 @@ header.header.headerFixed {
     color: #848892;
     font-weight: 300;
     font-size: 13px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 28px;
 }
 
