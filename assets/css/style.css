@@ -112,6 +112,10 @@ h4 {
     text-decoration: underline;
 }
 
+.contact-wrap {
+    height: 60vh;
+}
+
 .pop {
     font-family: "Inter", sans-serif;
 }

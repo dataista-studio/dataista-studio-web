@@ -625,6 +625,70 @@
 /* @media (max-width: 640px ) */
 
 @media (max-width: 576px) {
+
+    h2 {
+        font-size: 42px;
+    }
+    
+    h4 {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .capabiliti_wrap .capabiliti_tab_content .tab-pane .service_item .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .h-span {
+        line-height: 42px;
+    }
+    
+    .h-span-second {
+        left: 80px;
+    }
+    
+    .h-span-second::before {
+        height: 31px;
+        width: 80px;
+        left: -80px;
+        top: 5px;
+    }
+    
+    .somos-span-second {
+        left: 180px;
+    }
+    
+    .somos-span-second::before {
+        height: 31px;
+        width: 180px;
+        left: -180px;
+        top: 5px;
+    }
+    
+    .contact-span-second {
+        left: 155px;
+    }
+    
+    .contact-span-second::before {
+        height: 31px;
+        width: 155px;
+        left: -155px;
+        top: 5px;
+    }
+
+    .img-profile {
+        width: 100px;
+    }
+
+    .banner_contact a {
+        font-size: 24px;
+    }
+
+    .contact-wrap {
+        height: 75vh;
+    }
     
     .capabiliti_wrap .capabiliti_title:before,
     .about_wrap .about_title:before,
@@ -648,10 +712,10 @@
         line-height: 20px;
     }
     .hero_warp .banner_content .exp_list li + li {
-        padding-left: 25px;
+        padding-left: 15px;
     }
     .hero_warp .banner_content .exp_list li + li:before {
-        left: 6px;
+        left: 2px;
     }
     .about_wrap .about_content h4 {
         font-size: 18px;
