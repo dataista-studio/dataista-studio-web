@@ -302,8 +302,21 @@
 }
 /* @media (max-width: 991px ) */
 
+@media (min-width: 768px) {
+    .hero_warp .social_link {
+        display: none;
+    }
+}
 
 @media (max-width: 768px) {
+    .hero_warp .social_link {
+        display: block;
+    }
+
+    .icon_warp {
+        display: none;
+    }
+    
     .hero_warp.inner_banner {
         padding: 80px 0 50px;
     }
