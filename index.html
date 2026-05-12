@@ -1,379 +1,355 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>Dataista - Análisis y visualización de datos</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    
-    <!-- icon CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/elegant-icon-style.css">
-    
-    <!-- other CSS -->
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/particle.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!doctype html>
+<html lang="en" class="h-full antialiased selection:bg-brand-yellow selection:text-brand-black">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <meta
+            name="description"
+            content="Dataista: Expertos en diseño, análisis y visualización de datos de alto impacto"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://dataista.studio/" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+        <meta property="og:title" content="Dataista - Análisis y visualización de datos" />
+        <meta
+            property="og:description"
+            content="Transformamos datos en decisiones mediante diseño estratégico."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="assets/images/og-image.jpg" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+        <title>Dataista - Análisis y visualización de datos</title>
 
-</head>
-<body id='top'>
-    
-    <!-- start header -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-12">
-                    <!-- <nav class="navbar">
-                        <a class="navbar-brand logo" href="index.html"><span class="logo_text">Filix</span></a>
-                        <div class="select_lang ml-auto">
-                            <a href="#" class="lang en active">EN</a>
-                            <a href="#" class="lang fr">FR</a>
-                        </div>
-                        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#header_menu">
-                            <span class="m_menu">Menu</span> 
-                            <span class="m_close">Close</span> 
-                            <span class="bar_icon">
-                                <span class="bar bar_1"></span>
-                                <span class="bar bar_2"></span>
-                                <span class="bar bar_3"></span>
-                            </span>
-                        </button>
-                        <div class="opnen_menu">
-                            <div class="header_main_menu">
-                                <ul class="menu_item">
-                                    <li class="submenu">
-                                        <a href=".">Home</a>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="sub_footer">
-                            <ul class="footer_contact text-center">
-                                <li>
-                                    <a href="mailto:hola@dataista.studio">
-                                        <span>hola@dataista.studio</span>
-                                        <span>hola@dataista.studio</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="footer_social text-center">
-                                <li>
-                                    <a href="https://www.linkedin.com/company/dataista-studio/" target="_blank">
-                                        <i class="fa-brands fa-linkedin"></i>
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/dataista-studio" target="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://x.com/dataista_studio" target="_blank">
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:hola@dataista.studio" target="_blank">
-                                        <i class="fa-regular fa-envelope"></i>
-                                        <i class="fa-regular fa-envelope"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav> -->
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- end header -->
-    
-    <!-- start hero_warp -->
-    <section class="hero_warp">
-       <!-- <div class="particles-js" id="particles-js"></div> -->
-        <div class="container">
-            <div class="row d-flex align-items-center height_vh">
-                <div class="col-md-12 col-12">
-                    <div class="banner_content">
-                        <h1 class="banner_title">
-                            <svg class='dataista-logo' viewBox="0 0 853 297" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_28_6475)">
-                                    <path d="M0 133.74V0H37.37C46.16 0 53.79 1.68 60.27 5.04C66.74 8.4 71.78 13.16 75.38 19.33C78.98 25.5 80.78 32.67 80.78 40.86V92.52C80.78 100.95 78.98 108.22 75.38 114.32C71.78 120.43 66.74 125.19 60.27 128.61C53.79 132.03 46.16 133.74 37.37 133.74H0ZM19.79 115.97H37.38C44.58 115.97 50.32 113.89 54.6 109.74C58.87 105.59 61.01 99.85 61.01 92.52V40.86C61.01 33.78 58.87 28.13 54.6 23.91C50.32 19.7 44.58 17.59 37.38 17.59H19.79V115.97Z" fill="black"/>
-                                    <path d="M102.59 133.74L136.67 0H162.68L196.94 133.74H176.79L168.73 99.85H130.81L122.75 133.74H102.6H102.59ZM134.47 83.36H164.88L155.72 44.89C154.13 38.05 152.82 32.13 151.78 27.12C150.74 22.11 150.04 18.63 149.67 16.68C149.3 18.63 148.63 22.12 147.65 27.12C146.67 32.13 145.33 37.99 143.62 44.71L134.46 83.37L134.47 83.36Z" fill="black"/>
-                                    <path d="M249.7 133.74V17.95H213.98V0H305.4V17.95H269.49V133.73H249.7V133.74Z" fill="black"/>
-                                    <path d="M322.43 133.74L356.5 0H382.51L416.77 133.74H396.62L388.56 99.85H350.64L342.58 133.74H322.43ZM354.31 83.36H384.72L375.56 44.89C373.97 38.05 372.66 32.13 371.62 27.12C370.58 22.11 369.88 18.63 369.51 16.68C369.14 18.63 368.47 22.12 367.49 27.12C366.51 32.13 365.17 37.99 363.46 44.71L354.3 83.37L354.31 83.36Z" fill="black"/>
-                                    <path d="M435 295.12V277.15H461.95V179.24H435V161.27H509.26V179.24H482.12V277.15H509.26V295.12H435Z" fill="black"/>
-                                    <path d="M582.6 296.95C573.68 296.95 565.94 295.42 559.41 292.37C552.87 289.32 547.83 284.98 544.28 279.35C540.73 273.73 538.96 267.13 538.96 259.55H558.76C558.76 265.54 560.93 270.37 565.27 274.03C569.61 277.7 575.45 279.53 582.78 279.53C590.11 279.53 595.31 277.7 599.46 274.03C603.61 270.36 605.69 265.53 605.69 259.55C605.69 254.66 604.34 250.41 601.66 246.81C598.97 243.21 595.3 240.73 590.66 239.38L572.87 234.06C563.09 231.25 555.51 226.51 550.13 219.85C544.75 213.19 542.06 205.27 542.06 196.11C542.06 184.99 545.73 176.1 553.06 169.43C560.39 162.77 570.3 159.44 582.76 159.44C595.22 159.44 604.97 162.71 612.37 169.25C619.76 175.79 623.46 184.62 623.46 195.75H603.66C603.66 190.01 601.76 185.42 597.97 182C594.18 178.58 589.05 176.87 582.57 176.87C576.09 176.87 570.96 178.55 567.17 181.91C563.38 185.27 561.49 189.89 561.49 195.75C561.49 200.27 562.83 204.18 565.52 207.48C568.21 210.78 571.94 213.1 576.7 214.45L595.03 219.95C604.56 222.76 611.99 227.59 617.31 234.43C622.63 241.28 625.29 249.53 625.29 259.18C625.29 266.76 623.52 273.39 619.97 279.07C616.42 284.75 611.44 289.15 605.03 292.27C598.61 295.39 591.12 296.95 582.57 296.95H582.6Z" fill="black"/>
-                                    <path d="M682.16 295.12V179.24H646.41V161.27H737.9V179.24H701.96V295.12H682.16Z" fill="black"/>
-                                    <path d="M754.95 295.12L789.05 161.27H815.09L849.38 295.12H829.21L821.14 261.2H783.18L775.11 295.12H754.94H754.95ZM786.85 244.7H817.29L808.12 206.2C806.53 199.36 805.22 193.43 804.18 188.41C803.14 183.4 802.44 179.91 802.07 177.96C801.7 179.92 801.03 183.4 800.05 188.41C799.07 193.42 797.73 199.29 796.02 206.01L786.85 244.7Z" fill="black"/>
-                                    <path d="M417 162H0V296H417V162Z" fill="black"/>
-                                </g>
-                            </svg>
-                        </h1>
-                        <ul class="exp_list">
-                            <li class=" wow fadeInUp" data-wow-duration='1s'>diseño</li>
-                            <li class=" wow fadeInUp" data-wow-duration='2s'>análisis</li>
-                            <li class=" wow fadeInUp" data-wow-duration='3s'>visualización</li>
-                            <li class=" wow fadeInUp" data-wow-duration='4s'>datos</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <ul class="social_link">
-            <li>
-                <a href="https://www.linkedin.com/company/dataista-studio/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+        <!-- Tailwindcss v4 -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="./assets/css/all.min.css" />
+
+        <style type="text/tailwindcss">
+            @theme {
+                --color-brand-yellow: #d8d500;
+                --color-brand-black: #000000;
+                --font-sans: 'Inter', ui-sans-serif, system-ui;
+                --font-mono: 'JetBrains Mono', ui-monospace;
+            }
+
+            @utility no-scrollbar {
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body class="m-0 h-full overflow-hidden bg-brand-yellow font-sans text-white">
+        <nav
+            class="fixed md:bottom-[5%] md:left-[2%] bottom-8 left-1/2 md:translate-x-0 -translate-x-1/2 z-50 pointer-events-none"
+            aria-label="Redes Sociales"
+        >
+            <ul
+                class="pointer-events-auto flex flex-row md:flex-col items-center gap-3 bg-brand-yellow px-6 py-3 md:px-3 md:py-6"
+            >
+                <li>
+                    <a
+                        href="https://www.linkedin.com/company/dataista-studio/"
+                        target="_blank"
+                        class="group relative block h-[18px] w-[20px] overflow-hidden text-brand-black"
+                    >
+                        <i
+                            class="fa-brands fa-linkedin absolute top-0 left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                        <i
+                            class="fa-brands fa-linkedin absolute top-full left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://dataista.substack.com/"
+                        target="_blank"
+                        class="group relative block h-[18px] w-[20px] overflow-hidden text-brand-black"
+                    >
+                        <i
+                            class="fa-solid fa-bookmark absolute top-0 left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                        <i
+                            class="fa-solid fa-bookmark absolute top-full left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://www.instagram.com/dataista.cl/"
+                        target="_blank"
+                        class="group relative block h-[18px] w-[20px] overflow-hidden text-brand-black"
+                    >
+                        <i
+                            class="fa-brands fa-instagram absolute top-0 left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                        <i
+                            class="fa-brands fa-instagram absolute top-full left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://github.com/dataista-studio/"
+                        target="_blank"
+                        class="group relative block h-[18px] w-[20px] overflow-hidden text-brand-black"
+                    >
+                        <i
+                            class="fa-brands fa-github absolute top-0 left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                        <i
+                            class="fa-brands fa-github absolute top-full left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://x.com/dataista_studio/"
+                        target="_blank"
+                        class="group relative block h-[18px] w-[20px] overflow-hidden text-brand-black"
+                    >
+                        <i
+                            class="fa-brands fa-x-twitter absolute top-0 left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                        <i
+                            class="fa-brands fa-x-twitter absolute top-full left-0 w-full text-center transition-all duration-500 group-hover:-translate-y-full"
+                        ></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://www.dataista.cl/"
+                        target="_blank"
+                        class="group relative block h-[18px] w-[20px] overflow-hidden"
+                    >
+                        <svg
+                            class="absolute top-0 left-0 h-full w-full transition-all duration-500 group-hover:-translate-y-full"
+                            viewBox="8 16 41.4 22.3"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M44.2939 38C42.8339 38 41.6639 37.58 40.7839 36.74C39.9239 35.88 39.4939 34.75 39.4939 33.35V18.56H33.7939V16.1H42.1939V33.35C42.1939 34.03 42.3839 34.57 42.7639 34.97C43.1439 35.35 43.6539 35.54 44.2939 35.54H49.3939V38H44.2939Z"
+                                fill="black"
+                            />
+                            <path
+                                d="M23.2455 38.3C21.2455 38.3 19.6455 37.74 18.4455 36.62C17.2455 35.5 16.6455 33.96 16.6455 32V27.5C16.6455 25.54 17.2455 24 18.4455 22.88C19.6455 21.76 21.2455 21.2 23.2455 21.2C25.1455 21.2 26.6755 21.71 27.8355 22.73C29.0155 23.75 29.6355 25.14 29.6955 26.9H26.9955C26.9355 25.84 26.5755 25.03 25.9155 24.47C25.2555 23.89 24.3655 23.6 23.2455 23.6C22.0655 23.6 21.1155 23.94 20.3955 24.62C19.6955 25.28 19.3455 26.23 19.3455 27.47V32C19.3455 33.24 19.6955 34.2 20.3955 34.88C21.1155 35.56 22.0655 35.9 23.2455 35.9C24.3655 35.9 25.2555 35.61 25.9155 35.03C26.5755 34.45 26.9355 33.64 26.9955 32.6H29.6955C29.6355 34.36 29.0155 35.75 27.8355 36.77C26.6755 37.79 25.1455 38.3 23.2455 38.3Z"
+                                fill="black"
+                            />
+                            <path
+                                d="M10.46 37.86C9.72 37.86 9.12 37.64 8.66 37.2C8.22 36.76 8 36.19 8 35.49C8 34.75 8.22 34.15 8.66 33.69C9.12 33.23 9.72 33 10.46 33C11.2 33 11.79 33.23 12.23 33.69C12.69 34.15 12.92 34.75 12.92 35.49C12.92 36.19 12.69 36.76 12.23 37.2C11.79 37.64 11.2 37.86 10.46 37.86Z"
+                                fill="black"
+                            />
+                        </svg>
+
+                        <svg
+                            class="absolute top-full left-0 h-full w-full transition-all duration-500 group-hover:-translate-y-full"
+                            viewBox="8 16 41.4 22.3"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M44.2939 38C42.8339 38 41.6639 37.58 40.7839 36.74C39.9239 35.88 39.4939 34.75 39.4939 33.35V18.56H33.7939V16.1H42.1939V33.35C42.1939 34.03 42.3839 34.57 42.7639 34.97C43.1439 35.35 43.6539 35.54 44.2939 35.54H49.3939V38H44.2939Z"
+                                fill="black"
+                            />
+                            <path
+                                d="M23.2455 38.3C21.2455 38.3 19.6455 37.74 18.4455 36.62C17.2455 35.5 16.6455 33.96 16.6455 32V27.5C16.6455 25.54 17.2455 24 18.4455 22.88C19.6455 21.76 21.2455 21.2 23.2455 21.2C25.1455 21.2 26.6755 21.71 27.8355 22.73C29.0155 23.75 29.6355 25.14 29.6955 26.9H26.9955C26.9355 25.84 26.5755 25.03 25.9155 24.47C25.2555 23.89 24.3655 23.6 23.2455 23.6C22.0655 23.6 21.1155 23.94 20.3955 24.62C19.6955 25.28 19.3455 26.23 19.3455 27.47V32C19.3455 33.24 19.6955 34.2 20.3955 34.88C21.1155 35.56 22.0655 35.9 23.2455 35.9C24.3655 35.9 25.2555 35.61 25.9155 35.03C26.5755 34.45 26.9355 33.64 26.9955 32.6H29.6955C29.6355 34.36 29.0155 35.75 27.8355 36.77C26.6755 37.79 25.1455 38.3 23.2455 38.3Z"
+                                fill="black"
+                            />
+                            <path
+                                d="M10.46 37.86C9.72 37.86 9.12 37.64 8.66 37.2C8.22 36.76 8 36.19 8 35.49C8 34.75 8.22 34.15 8.66 33.69C9.12 33.23 9.72 33 10.46 33C11.2 33 11.79 33.23 12.23 33.69C12.69 34.15 12.92 34.75 12.92 35.49C12.92 36.19 12.69 36.76 12.23 37.2C11.79 37.64 11.2 37.86 10.46 37.86Z"
+                                fill="black"
+                            />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main
+            class="h-dvh w-full snap-y snap-mandatory overflow-y-scroll scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+            role="main"
+        >
+            <!-- Mapa -->
+            <section
+                class="relative h-dvh w-full snap-start flex items-center justify-center overflow-hidden"
+                aria-labelledby="title-1"
+            >
+                <img
+                    src="./assets/images/plataformas.jpg"
+                    class="absolute inset-0 h-full w-full object-cover"
+                    alt="Plataformas de Datos"
+                    loading="eager"
+                />
+
+                <h2
+                    id="title-1"
+                    class="absolute top-[10%] md:top-auto md:bottom-[30%] left-1/2 -translate-x-1/2 md:left-auto md:right-12 md:translate-x-0 z-20 flex flex-col items-center md:items-end font-mono text-3xl md:text-5xl font-extrabold text-brand-black leading-tight select-none"
+                >
+                    <span class="bg-brand-yellow px-4 py-1 mb-1 md:mr-8 inline-block"
+                        >Plataformas</span
+                    >
+                    <span class="bg-brand-yellow px-4 py-1 inline-block">de datos</span>
+                </h2>
+
+                <a
+                    href="https://www.mapadejusticiaeducacional.cl/"
+                    target="_blank"
+                    class="absolute bottom-[12%] md:bottom-[5%] left-1/2 -translate-x-1/2 md:left-auto md:right-12 md:translate-x-0 z-20 font-mono text-xs md:text-sm italic text-black md:text-white opacity-80 hover:opacity-100 transition-opacity select-none tracking-tight"
+                >
+                    https://www.mapadejusticiaeducacional.cl
                 </a>
-            </li>
-            <li>
-                <a href="https://github.com/dataista-studio" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-github"></i>
+            </section>
+
+            <!-- Candidatas -->
+            <section
+                class="relative h-dvh w-full snap-start flex items-center justify-center overflow-hidden"
+                aria-labelledby="title-2"
+            >
+                <img
+                    src="./assets/images/narrativas.jpg"
+                    class="absolute inset-0 h-full w-full object-cover"
+                    alt="Narrativas Visuales"
+                    loading="lazy"
+                />
+
+                <h2
+                    id="title-2"
+                    class="absolute top-[10%] md:top-auto md:bottom-[30%] left-1/2 -translate-x-1/2 md:left-auto md:right-12 md:translate-x-0 z-20 flex flex-col items-center md:items-end font-mono text-3xl md:text-5xl font-extrabold text-brand-black leading-tight select-none"
+                >
+                    <span class="bg-brand-yellow px-4 py-1 mb-1 md:mr-8 inline-block"
+                        >Narrativas</span
+                    >
+                    <span class="bg-brand-yellow px-4 py-1 inline-block">visuales</span>
+                </h2>
+
+                <a
+                    href="https://candidatas.dataista.studio/"
+                    target="_blank"
+                    class="absolute bottom-[12%] md:bottom-[5%] left-1/2 -translate-x-1/2 md:left-auto md:right-12 md:translate-x-0 z-20 font-mono text-xs md:text-sm italic text-white opacity-80 hover:opacity-100 transition-opacity select-none tracking-tight"
+                >
+                    https://candidatas.dataista.studio
                 </a>
-            </li>
-            <li>
-                <a href="https://x.com/dataista_studio" target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
+            </section>
+
+            <!-- Elecciones -->
+            <section
+                class="relative h-dvh w-full snap-start flex items-center justify-center overflow-hidden"
+                aria-labelledby="title-3"
+            >
+                <img
+                    src="./assets/images/interactivos.jpg"
+                    class="absolute inset-0 h-full w-full object-cover"
+                    alt="Interactivos"
+                    loading="lazy"
+                />
+
+                <h2
+                    id="title-3"
+                    class="absolute top-[10%] md:top-auto md:bottom-[30%] left-1/2 -translate-x-1/2 md:left-auto md:right-12 md:translate-x-0 z-20 flex flex-col items-center md:items-end font-mono text-3xl md:text-5xl font-extrabold text-brand-black leading-tight select-none"
+                >
+                    <span class="bg-brand-yellow px-4 py-1 mb-1 inline-block">Interactivos</span>
+                </h2>
+
+                <a
+                    href="https://elecciones.dataista.cl/"
+                    target="_blank"
+                    class="absolute bottom-[12%] md:bottom-[5%] left-1/2 -translate-x-1/2 md:left-auto md:right-12 md:translate-x-0 z-20 font-mono text-xs md:text-sm italic md:text-black text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)] md:drop-shadow-none opacity-80 hover:opacity-100 transition-all select-none tracking-tight whitespace-nowrap"
+                >
+                    https://elecciones.dataista.cl
                 </a>
-            </li>
-            <li>
-                <a href="mailto:hola@dataista.studio" target="_blank">
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-regular fa-envelope"></i>
+            </section>
+
+            <section
+                class="relative flex h-dvh w-full snap-start flex-col items-center justify-center bg-brand-yellow px-8 text-brand-black"
+                aria-labelledby="title-4"
+            >
+                <h2
+                    id="title-4"
+                    class="absolute top-[10%] left-0 z-20 flex w-full justify-center px-8 select-none md:top-16"
+                >
+                    <svg
+                        class="h-20 w-auto md:h-34 text-brand-black"
+                        viewBox="0 0 853 297"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <g clip-path="url(#clip0_28_6475)">
+                            <path
+                                d="M0 133.74V0H37.37C46.16 0 53.79 1.68 60.27 5.04C66.74 8.4 71.78 13.16 75.38 19.33C78.98 25.5 80.78 32.67 80.78 40.86V92.52C80.78 100.95 78.98 108.22 75.38 114.32C71.78 120.43 66.74 125.19 60.27 128.61C53.79 132.03 46.16 133.74 37.37 133.74H0ZM19.79 115.97H37.38C44.58 115.97 50.32 113.89 54.6 109.74C58.87 105.59 61.01 99.85 61.01 92.52V40.86C61.01 33.78 58.87 28.13 54.6 23.91C50.32 19.7 44.58 17.59 37.38 17.59H19.79V115.97Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M102.59 133.74L136.67 0H162.68L196.94 133.74H176.79L168.73 99.85H130.81L122.75 133.74H102.6H102.59ZM134.47 83.36H164.88L155.72 44.89C154.13 38.05 152.82 32.13 151.78 27.12C150.74 22.11 150.04 18.63 149.67 16.68C149.3 18.63 148.63 22.12 147.65 27.12C146.67 32.13 145.33 37.99 143.62 44.71L134.46 83.37L134.47 83.36Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M249.7 133.74V17.95H213.98V0H305.4V17.95H269.49V133.73H249.7V133.74Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M322.43 133.74L356.5 0H382.51L416.77 133.74H396.62L388.56 99.85H350.64L342.58 133.74H322.43ZM354.31 83.36H384.72L375.56 44.89C373.97 38.05 372.66 32.13 371.62 27.12C370.58 22.11 369.88 18.63 369.51 16.68C369.14 18.63 368.47 22.12 367.49 27.12C366.51 32.13 365.17 37.99 363.46 44.71L354.3 83.37L354.31 83.36Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M435 295.12V277.15H461.95V179.24H435V161.27H509.26V179.24H482.12V277.15H509.26V295.12H435Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M582.6 296.95C573.68 296.95 565.94 295.42 559.41 292.37C552.87 289.32 547.83 284.98 544.28 279.35C540.73 273.73 538.96 267.13 538.96 259.55H558.76C558.76 265.54 560.93 270.37 565.27 274.03C569.61 277.7 575.45 279.53 582.78 279.53C590.11 279.53 595.31 277.7 599.46 274.03C603.61 270.36 605.69 265.53 605.69 259.55C605.69 254.66 604.34 250.41 601.66 246.81C598.97 243.21 595.3 240.73 590.66 239.38L572.87 234.06C563.09 231.25 555.51 226.51 550.13 219.85C544.75 213.19 542.06 205.27 542.06 196.11C542.06 184.99 545.73 176.1 553.06 169.43C560.39 162.77 570.3 159.44 582.76 159.44C595.22 159.44 604.97 162.71 612.37 169.25C619.76 175.79 623.46 184.62 623.46 195.75H603.66C603.66 190.01 601.76 185.42 597.97 182C594.18 178.58 589.05 176.87 582.57 176.87C576.09 176.87 570.96 178.55 567.17 181.91C563.38 185.27 561.49 189.89 561.49 195.75C561.49 200.27 562.83 204.18 565.52 207.48C568.21 210.78 571.94 213.1 576.7 214.45L595.03 219.95C604.56 222.76 611.99 227.59 617.31 234.43C622.63 241.28 625.29 249.53 625.29 259.18C625.29 266.76 623.52 273.39 619.97 279.07C616.42 284.75 611.44 289.15 605.03 292.27C598.61 295.39 591.12 296.95 582.57 296.95H582.6Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M682.16 295.12V179.24H646.41V161.27H737.9V179.24H701.96V295.12H682.16Z"
+                                fill="currentColor"
+                            />
+                            <path
+                                d="M754.95 295.12L789.05 161.27H815.09L849.38 295.12H829.21L821.14 261.2H783.18L775.11 295.12H754.94H754.95ZM786.85 244.7H817.29L808.12 206.2C806.53 199.36 805.22 193.43 804.18 188.41C803.14 183.4 802.44 179.91 802.07 177.96C801.7 179.92 801.03 183.4 800.05 188.41C799.07 193.42 797.73 199.29 796.02 206.01L786.85 244.7Z"
+                                fill="currentColor"
+                            />
+                            <path d="M417 162H0V296H417V162Z" fill="currentColor" />
+                        </g>
+                    </svg>
+                </h2>
+
+                <p
+                    class="lg:max-w-3xl xl:max-w-5xl max-w-2xl text-center font-mono text-lg font-normal leading-tight md:text-2xl lg:text-3xl"
+                >
+                    Diseñamos y desarrollamos herramientas personalizadas para analizar y visualizar
+                    tus datos
+                </p>
+
+                <a
+                    href="mailto:hola@dataista.studio"
+                    class="mt-12 relative font-mono font-bold text-lg md:mt-24 md:text-3xl hover:opacity-70 transition-opacity"
+                >
+                    hola@dataista.studio
                 </a>
-            </li>
-        </ul>
-    </section>
-    <!-- end hero_warp -->
+            </section>
+        </main>
 
-    <section class="icon_warp">
-         <ul class="social_link">
-             <li>
-                 <a href="https://www.linkedin.com/company/dataista-studio/" target="_blank">
-                     <i class="fa-brands fa-linkedin"></i>
-                     <i class="fa-brands fa-linkedin"></i>
-                 </a>
-             </li>
-             <li>
-                 <a href="https://github.com/dataista-studio" target="_blank">
-                     <i class="fa-brands fa-github"></i>
-                     <i class="fa-brands fa-github"></i>
-                 </a>
-             </li>
-             <li>
-                 <a href="https://x.com/dataista_studio" target="_blank">
-                     <i class="fa-brands fa-x-twitter"></i>
-                     <i class="fa-brands fa-x-twitter"></i>
-                 </a>
-             </li>
-             <li>
-                 <a href="mailto:hola@dataista.studio" target="_blank">
-                     <i class="fa-regular fa-envelope"></i>
-                     <i class="fa-regular fa-envelope"></i>
-                 </a>
-             </li>
-         </ul>
-     </section>
-     
-    <!-- start capabiliti_wrap -->
-    <section class="capabiliti_wrap">
-        <div class="container">
-            <div class="row section-title">
-                <div class="col-lg-12 col-12">
-                    <h2 class="wow fadeInUp"><span class="h-span h-span-first">Que</span><span class="h-span h-span-second">hacemos</span></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="tab-content capabiliti_tab_content">
-                        <div class="tab-pane fade show active" id="uxUiDesign">
-                            <!-- <p class="tabPara">Burke what a load of rubbish young delinquent matie boy a blinding shot horse play cuppa old wind up bevvy my good sir, bugger all mate that ummm I'm telling starkers show off show.!</p> -->
-                            
-                            <div class="row">
-                                <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="service_item">
-                                        <div class="icon">
-                                            <i class="ti-pencil-alt"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Guidelines de visualización de datos</h4>
-                                            <p>Elaboramos directrices personalizadas para asegurar que tus visualizaciones sean claras, coherentes y efectivas en distintos formatos. Esto incluye la selección de gráficos adecuados, paletas de colores, tipografía y la organización de la información, garantizando que tus datos sean fácilmente comprendidos por tu audiencia y que transmitan el valor de tu marca.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="service_item">
-                                        <div class="icon">
-                                            <i class="ti-layers-alt"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Plataformas web de visualización de datos</h4>
-                                            <p>Diseñamos plataformas interactivas y dinámicas que permiten explorar y analizar datos de manera clara y atractiva. Estas soluciones son ajustadas al objetivo que tiene tu organización y la audiencia a la que va dirigida la plataforma.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="service_item">
-                                        <div class="icon">
-                                            <i class="ti-bar-chart"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Comunica tus Datos en distintos formatos</h4>
-                                            <p>Transformamos tus datos en informes, presentaciones y otros formatos visuales que cuentan una historia clara y persuasiva. Desde reportes hasta presentaciones, nos aseguramos de que tu información se comunique de manera efectiva y atractiva para tu audiencia.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="service_item">
-                                        <div class="icon">
-                                            <i class="ti-pie-chart"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Dashboards</h4>
-                                            <p>Desarrollamos dashboards interactivos que permiten visualizar indicadores clave y métricas de manera clara y concisa. Para facilitar la toma de decisiones rápidas e informadas, adaptadas a las necesidades específicas de tu organización.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-12">
-                                    <div class="service_item">
-                                        <div class="icon">
-                                            <i class="ti-book"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Capacitaciones y talleres</h4>
-                                            <p>Nuestro equipo está especializado en la transferencia de conocimientos sobre visualización de datos, storytelling con datos y programación. Ofrecemos capacitaciones personalizadas para equipos de diversos campos, cubriendo desde los principios básicos hasta técnicas avanzadas en visualización de datos.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end capabiliti_wrap -->
-
-    <section class="capabiliti_wrap">
-        <div class="container">
-            <div class="row section-title">
-                <div class="col-lg-12 col-12">
-                    <h2 class="wow fadeInUp"><span class="h-span somos-span-first">Quienes</span><span class="h-span somos-span-second">somos</span></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="tab-content capabiliti_tab_content">
-                        <div class="tab-pane fade show active" id="uxUiDesign">
-                            <!-- <p class="tabPara">Burke what a load of rubbish young delinquent matie boy a blinding shot horse play cuppa old wind up bevvy my good sir, bugger all mate that ummm I'm telling starkers show off show.!</p> -->
-                            
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-12 profile-wrap">
-                                    <div class="service_item">
-                                        <div class="port_img tilt">
-                                            <img src="assets/images/dmoyano.png" alt="img" class="img-fluid img-profile">
-                                        </div>
-                                        <div class="content bio-profile">
-                                            <h4>Daniela Moyano</h4>
-                                            <p>Daniela Moyano es cofundadora del ODEGI y Directora de Diseño en Dataista. Con un B.A. en Diseño y un M.A. en Sociología, Daniela ha trabajado como consultora en visualización de datos para organizaciones como CEPAL y el Ministerio de Ciencia, Tecnología, Conocimiento e Innovación. Tiene vasta trayectoria como profesora en distintas universidades, también se ha desempeñado como jefa de programa del Diplomado en Visualización de Datos UC. Su experiencia se centra en el diseño de visualizaciones de datos, gestión de proyectos, y comunicación efectiva de la información.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-12 profile-wrap">
-                                    <div class="service_item">
-                                        <div class="port_img tilt">
-                                            <img src="assets/images/fbecerra.jpg" alt="img" class="img-fluid img-profile">
-                                        </div>
-                                        <div class="content">
-                                            <h4>Fernando Becerra</h4>
-                                            <p>Fernando Becerra es el fundador de Dataista. Tiene un Ph.D. en Astronomía y Astrofísica de la Universidad de Harvard y ha trabajado como consultor en ciencia y visualización de datos por más de 5 años. Ha trabajado con organizaciones sin fines de lucro como la campaña ONE, USAFacts, ProPublica, Urban Institute, y The Baltimore Banner, así como con empresas como Planet Labs y The New York Times. Fue profesor de Visualización de Información en el Magister en Ciencia de Datos de la Universidad del Desarrollo y su experiencia incluye visualización de datos interactiva, desarrollo web y análisis de datos cualitativos y cuantitativos.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="capabiliti_wrap">
-        <div class="container">
-            <div class="row section-title">
-                <div class="col-lg-12 col-12">
-                    <h2 class="wow fadeInUp"><span class="h-span contact-span-first">Contác</span><span class="h-span contact-span-second">tanos</span></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="tab-content capabiliti_tab_content">
-                        <div class="tab-pane fade show active" id="uxUiDesign">
-                            <!-- <p class="tabPara">Burke what a load of rubbish young delinquent matie boy a blinding shot horse play cuppa old wind up bevvy my good sir, bugger all mate that ummm I'm telling starkers show off show.!</p> -->
-                            
-                            <div class="row d-flex align-items-center contact-wrap">
-                                <div class="col-md-12 col-12">
-                                    <!-- <div class="banner_content"> -->
-                                        <h1 class="banner_contact">
-                                            <a href="mailto:hola@dataista.studio">hola@dataista.studio</a>
-                                        </h1>
-                                    <!-- </div> -->
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-    <!-- Optional JavaScript -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/jquery.form.js"></script>
-    <script src="assets/js/contact.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/parallax-scroll.js"></script>
-    <script src="assets/js/universal-tilt.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    
-</body>
+        <script src="assets/js/app.js" defer></script>
+    </body>
 </html>
